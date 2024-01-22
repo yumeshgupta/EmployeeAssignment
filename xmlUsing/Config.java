@@ -9,7 +9,7 @@ public class Config {
 		EmployeeServices es = new EmployeeServices();
 		ApplicationContext con = new FileSystemXmlApplicationContext("spring.xml");
 		EmployeeServices emp= con.getBean("employeeService",EmployeeServices.class);
-		Employee employee=new Employee(1,"Akshay",21,"developer",200);
+		Employee employee=new Employee(1,"yumesh",21,"developer",200);
  	   es.createEmployee(employee);
  	   employee=new Employee(2,"Prathyusha",30,"trainer",55032);
  	   es.createEmployee(employee);
