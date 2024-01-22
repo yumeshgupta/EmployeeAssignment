@@ -7,7 +7,7 @@ public class Config {
 		EmployeeServices es=new EmployeeServices();
 		AnnotationConfigApplicationContext context=new AnnotationConfigApplicationContext(EmpConfiguration.class);
 		EmployeeServices employeeDAO=context.getBean(EmployeeServices.class);
-		Employee employee=new Employee(1,"Akshay",21,"developer",20000);
+		Employee employee=new Employee(1,"yumesh",21,"developer",20000);
  	   es.createEmployee(employee);
  	   employee=new Employee(2,"Prathyusha",30,"trainer",55032);
  	   es.createEmployee(employee);
